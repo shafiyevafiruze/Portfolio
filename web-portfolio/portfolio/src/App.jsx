@@ -10,10 +10,10 @@ import Contact from "./components/contact/Contact";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/Portfolio">
         <Header />
         <Routes>
-          <Route index element={<Home />} />
+          <Route path="Portfolio/" index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="project" element={<Project />} />
           <Route path="contact" element={<Contact />} />
